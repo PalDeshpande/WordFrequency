@@ -21,11 +21,11 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - helper method
 
+//Sort NSDictionary by word frequency and preapare an array of sorted words.
 - (void)sortWordsByFrequency: (NSMutableDictionary *)dictionary
 {
     self.blockSortedKeys = [[NSArray alloc] init];
@@ -40,8 +40,7 @@
         }
         return (NSComparisonResult)NSOrderedSame;
     }];
-    
-    NSLog(@"sorted words, @%@", self.blockSortedKeys);
+   
 }
 
 #pragma mark - Table view data source
@@ -55,10 +54,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    if (self.noOfWordsToReturn > [self.wordsWithFrequency count]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"word count" message:[NSString stringWithFormat:@"No. of words requested is too large, returning %i words", self.noOfWordsToReturn] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if (self.noOfWordsToReturn > [self.blockSortedKeys count]) {
+        int actualWordsCount = (int)[self.blockSortedKeys count];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"word count" message:[NSString stringWithFormat:@"No. of words requested were too large, returning %i words", actualWordsCount] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-        return [self.wordsWithFrequency count];
+        return actualWordsCount;
     }
     else
     {
