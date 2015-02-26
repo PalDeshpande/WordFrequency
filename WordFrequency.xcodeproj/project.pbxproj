@@ -14,6 +14,7 @@
 		B362B2601A9E5B9A0040068E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B362B25F1A9E5B9A0040068E /* Images.xcassets */; };
 		B362B2631A9E5B9A0040068E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B362B2611A9E5B9A0040068E /* LaunchScreen.xib */; };
 		B362B26F1A9E5B9A0040068E /* WordFrequencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B362B26E1A9E5B9A0040068E /* WordFrequencyTests.m */; };
+		B362B27A1A9EE3790040068E /* WordsByFrequencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B362B2791A9EE3790040068E /* WordsByFrequencyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B362B2681A9E5B9A0040068E /* WordFrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B362B26D1A9E5B9A0040068E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B362B26E1A9E5B9A0040068E /* WordFrequencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordFrequencyTests.m; sourceTree = "<group>"; };
+		B362B2781A9EE3790040068E /* WordsByFrequencyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsByFrequencyTableViewController.h; sourceTree = "<group>"; };
+		B362B2791A9EE3790040068E /* WordsByFrequencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsByFrequencyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				B362B2591A9E5B9A0040068E /* ViewController.h */,
 				B362B25A1A9E5B9A0040068E /* ViewController.m */,
 				B362B25C1A9E5B9A0040068E /* Main.storyboard */,
+				B362B2781A9EE3790040068E /* WordsByFrequencyTableViewController.h */,
+				B362B2791A9EE3790040068E /* WordsByFrequencyTableViewController.m */,
 				B362B25F1A9E5B9A0040068E /* Images.xcassets */,
 				B362B2611A9E5B9A0040068E /* LaunchScreen.xib */,
 				B362B2521A9E5B9A0040068E /* Supporting Files */,
@@ -222,6 +227,7 @@
 				B362B25B1A9E5B9A0040068E /* ViewController.m in Sources */,
 				B362B2581A9E5B9A0040068E /* AppDelegate.m in Sources */,
 				B362B2551A9E5B9A0040068E /* main.m in Sources */,
+				B362B27A1A9EE3790040068E /* WordsByFrequencyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
