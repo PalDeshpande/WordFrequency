@@ -10,19 +10,13 @@
 #import <XCTest/XCTest.h>
 
 @interface WordFrequencyTests : XCTestCase
-@property (nonatomic)ViewController *homeVC;
-@property (nonatomic)WordsByFrequencyTableViewController *wordsVC;
-
 @end
 
 @implementation WordFrequencyTests
 
 - (void)setUp {
     [super setUp];
-    
-    self.homeVC = [[ViewController alloc] init];
-    self.wordsVC = [[WordsByFrequencyTableViewController alloc] init];
-}
+ }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
